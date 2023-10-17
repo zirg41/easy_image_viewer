@@ -85,6 +85,7 @@ Future<Dialog?> showImageViewerPager(
   return showDialog<Dialog>(
       context: context,
       useSafeArea: useSafeArea,
+      barrierColor: backgroundColor,
       builder: (context) {
         return EasyImageViewerDismissibleDialog(imageProvider,
             immersive: immersive,
